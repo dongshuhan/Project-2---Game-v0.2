@@ -27,7 +27,7 @@ Project 2 - Game v0.2.  CMPt
 </textarea>
   <br/>
   <br/>
-  <script type = "text/javascript">
+<script>
 functionbtnNorth_click(){
                          document.getElementById("message").value="you cut through the courtyard, past the empty granite benches where
                                                                     you'd met your lover!"；}
@@ -43,18 +43,22 @@ var score = 0;
 			score += 5;
         document.getElementById("gameScore").innerHTML = score;
 			}
-	</script>
-	<br/>
-		<!--Buttons are now being created, and they will call the functions via the onclick value, which also add 5 points to score -->
-		<input type="button" value="North" onclick="btnNorth_click(); points();this.onclick=null" id="btnNorth" value="North"/><br/><br/>
-		<input type="button" value="South" onclick="btnSouth_click(); points();this.onclick=null" id="btnSouth" value="South"/><br/><br/>
-		<input type="button" value="East" onclick="btnEast_click(); points();this.onclick=null" id="btnEast" value="East"/><br/><br/>
-		<input type="button" value="West" onclick="btnWest_click(); points();this.onclick=null" id="btnWest" value="West"/><br/><br/>
-	
-	<em>Score:</em> <a id="gameScore">0</a> points
-	<br/>
-	<br/>
-
+-</script>
+<br/>
+ - 
+<br/>
+ -           <button type="button" onClick="btnNorth(); Points (); this.onclick=null;">North</button>
+ -		
+ -          <button type="button" onClick="btnSouth(); Points ();this.onclick=null;">South</button>
+ -		
+ -	    <button type="button" onClick="btnWest(); Points ();this.onclick=null;">West</button>
+ -		
+ -	     <button type="button" onClick="btnEast(); Points ();this.onclick=null;">East</button>
+ - this.onclick=null;">East</button>
+ -      <br/>
+ -  	<br/>
+ -	<p>Your score is <a id="myScore">0</a> points!</p>
+ -<br/>
 </body>
 </html>
     
