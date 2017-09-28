@@ -47,13 +47,14 @@ var score = 0;
 			}
 </script>
  <br/>
-		<button type="button" onClick="btnNorth(); Points (); this.;">North</button>
+                <button type="button" onClick="btnNorth(); Points (); this.onclick=null;">North</button>
 		
-		<button type="button" onClick="btnSouth(); Points ();">South</button>
+		<button type="button" onClick="btnSouth(); Points ();this.onclick=null;">South</button>
 		
-		<button type="button" onClick="btnWest(); Points ();">West</button>
+		<button type="button" onClick="btnWest(); Points ();this.onclick=null;">West</button>
 		
-		<button type="button" onClick="btnEast(); Points ();">East</button>	
+		<button type="button" onClick="btnEast(); Points ();this.onclick=null;">East</button>
+
       <br/>
   	<br>
 	<p>Your score is <a id="myScore">0</a> points!</p>
