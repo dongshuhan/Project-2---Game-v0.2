@@ -15,6 +15,35 @@ Project 2 - Game v0.2.  CMPt
 		
      }
   </Style>
+<script>
+			
+				
+	// Text for North Location	
+	function locNorth() {
+				document.getElementById("message").value = "You decide to go North but begin questioning whether this was a good idea. You only encounter more desert.";
+				}	
+	//Text for South Location
+	function locSouth() {
+				document.getElementById("message").value = "You decide to go South. After walking for miles, you spot a caravan in the distance.";
+				}
+	//Text for West Location
+	function locWest() {
+				document.getElementById("message").value = "You decide to go West. After hours of walking, you stumble upon a grouping of cacti.";
+				}	
+	//Text for East Location
+	   function locEast() {
+				document.getElementById("message").value = "You decide to go East.You encounter more desert until, on the other side of a sand dune, you see a tower of smoke.";
+				}
+			
+			var score = 0;
+			function Points() {
+				score += 5;
+	        document.getElementById("myScore").innerHTML = score;
+	    	}
+			</script>
+
+
+
 </head>
 <body>
   <h1>Life Game (T^T) </h1>
@@ -26,26 +55,7 @@ Project 2 - Game v0.2.  CMPt
                      document.getElementById("message").value="      cols="50"> If you do not choose, your life won’t  advance, but here is only a game.
 </textarea>
   <br/>
-  <br/>
-  <script type = "text/javascript">
-	   var score = 0;			   	   
-      functionbtnNorth_click(){
-                           document.getElementById("message").value="you cut through the courtyard, past the empty granite benches where
-                                                                    you'd met your lover!"}
-  function btnSouth_click() {         
-                           document.getElementById("message").value=" you lose yor life by a accident(w v w)"}
-  function btnEast_click() {
-			document.getElementById("message").value="You get a lot of wealth, then you buy all the world."}
-  function btnWest_click() {
-			document.getElementById("message").value = " wake up, It is only a game!"}
-var score = 0;
-		function points() 		{
-			score += 5;
-        document.getElementById("gameScore").innerHTML = score;
-			}
-</script>
- <br/>
-                <button type="button" onClick="btnNorth(); Points (); this.onclick=null;">North</button>
+      <button type="button" onClick="btnNorth(); Points (); this.onclick=null;">North</button>
 		
 		<button type="button" onClick="btnSouth(); Points ();this.onclick=null;">South</button>
 		
