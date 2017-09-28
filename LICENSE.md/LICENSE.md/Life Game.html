@@ -24,8 +24,63 @@ Project 2 - Game v0.2.  CMPt
                            name="message"
                            rows="50"
                            cols="50"> If you do not choose, your life won’t  advance, but here is only a game.
-</textarea>
-  <br/>
+<script type = "text/javascript">
+	var score = 0
+	var headNorth = false
+	var headSouth = false
+	var headEast = false
+	var headWest = false 
+  //NORTH
+		function btnNorth_click() {
+			if (headNorth == false) {
+			var message = "Just North of campus is Darby O'Gills, a popular destination on Friday nights for students. It is usually dead before 11 P.M, but after that, the club is packed until 2 A.M!";
+			document.getElementById("textbox").innerHTML = message;
+			North = true;
+			score = score + 5;
+			document.getElementById(score) = score;
+			} else {
+			var message = "Just North of campus is Darby O'Gills, a popular destination on Friday nights for students. It is usually dead before 11 P.M, but after that, the club is packed until 2 A.M!";
+			document.getElementById("textbox"); }
+			}
+	//SOUTH
+		function btnSouth_click() {
+			if (headSouth == false) {
+			var message = "Mahoney's is senior exclusive bar, and 99% of time, you will be denied if you have a form of fake government documentation. Once you turn 21, Mahoney's is where you go to celebrate!";
+			document.getElementById("textbox").innerHTML = message;
+			South = true;
+			score = score + 5;
+			document.getElementById("score") = score
+			} else {
+			var message = "Mahoney's is senior exclusive bar, and 99% of time, you will be denied if you have a form of fake government documentation. Once you turn 21, Mahoney's is where you go to celebrate!";
+			document.getElementById("textbox"); }
+			}
+	//EAST
+		function btnEast_click() {
+			if (headEast == false) {
+			var message = "Just off of Main Street in Pughkeepsie is the legendary bar Union. It is popular on Saturday and Tuesday nights, and they will let anyone in who wants to have a good time.";
+			document.getElementById("textbox").innerHTML = message;
+			East = true;
+			score = score + 5;
+			document.getElementById("score") = score
+			} else {
+			var message = "Just off of Main Street in Pughkeepsie is the legendary bar Union. It is popular on Saturday and Tuesday nights, and they will let anyone in who wants to have a good time.";
+			document.getElementById("textbox"); }
+			}
+	//WEST
+		function btnWest_click() {
+			if (headWest == false) {
+			var message = "Just a few steps from Mahoney's is River Station, known as River on campus. It is poular on Thursday nights and usually has a laid back vibe. Always a good time when you bring a group of friends.";
+			document.getElementById("textbox").innerHTML = message;
+			Westst = true;
+			score = score + 5;
+			document.getElementById("score") = score
+			} else {
+			var message = "Just a few steps from Mahoney's is River Station, known as River on campus. It is poular on Thursday nights and usually has a laid back vibe. Always a good time when you bring a group of friends.";
+			document.getElementById("textbox"); }
+			}
+	</script>
+
+<br/>
       <button type="button" onClick="btnNorth(); Points (); this.onclick=null;">North</button>
 		
 		<button type="button" onClick="btnSouth(); Points ();this.onclick=null;">South</button>
