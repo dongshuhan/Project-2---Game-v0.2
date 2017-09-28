@@ -1,0 +1,57 @@
+<!--
+ Dong shuhan
+ 27th september 2017
+Project 2 - Game v0.2.  CMPt
+--!>
+<!DOCTYPE html>
+ <html>
+   <head>
+    <meta charset="utf-8">
+    <title> Life Game (T^T) </title>
+ <Style>
+    body {
+    Background-color: #56b896;
+    Background-size: 100% 100%;
+		
+     }
+  </Style>
+</head>
+<body> 
+  <h1>Life Game (T^T) </h1> 
+<script>
+    function btnNorth() {
+	document.getElementById("message").value="you cut through the courtyard, past the empty granite benches, where you'd met your lover!";
+}	
+    function btnSouth() {
+	document.getElementById("message").value="you lose your life by a accident";	
+	}
+	
+	function btnEast()  {
+		document.getElementById("message").value="you get a lot of wealth, then you get the world";
+	}
+	
+	function btnWest() {
+		document.getElementById("'message").value="wake up , it is only a game"
+	}
+	
+	</script>
+    <br/>
+         <textarea readonly id="message"
+                           name="message"
+                           rows="50"
+                           cols="50"> If you do not choose, your life won’t  advance, but here is only a game.
+    </textarea>
+<br/>
+      <button type="button" onClick="btnNorth(); Points (); this.onclick=null;">North</button>
+		
+		<button type="button" onClick="btnSouth(); Points ();this.onclick=null;">South</button>
+		
+		<button type="button" onClick="btnWest(); Points ();this.onclick=null;">West</button>
+		
+		<button type="button" onClick="btnEast(); Points ();this.onclick=null;">East</button>
+ 
+      <br/>
+   
+    <p>  Life is a game all people are players or prayers you want to attend the  party  please touch <a href = "mailto:shuhan.dong1@marist.edu"> here.
+</body>
+</html>
