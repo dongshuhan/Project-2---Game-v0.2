@@ -52,6 +52,6 @@ Project 2 - Game v0.2.  CMPt
  
       <br/>
    
-    <p>  Life is a game all people are players or prayers you want to attend the  party  please touch <a href = "mailto:shuhan.dong1@marist.edu"> here.
+    <p>  Life is a game all people are players or prayers you want to attend the  party  please touch <a href = "mailto:shuhan.dong1@marist.edu"> here.</p>
 </body>
 </html>
