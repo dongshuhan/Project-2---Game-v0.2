@@ -15,36 +15,34 @@ Project 2 - Game v0.2.  CMPt
 		
      }
   </Style>
+
+</head>
+<body>
 <script>
 
-    function locNorth() {
+    function btnNorth() {
 	document.getElementById("message").value="you cut through the courtyard, past the empty granite benches, where you'd met your lover!";
 }	
-    function locSouth() {
+    function btnSouth() {
 	document.getElementById("message").value="you lose your life by a accident";	
 	}
 	
-	function locEast()  {
+	function btnEast()  {
 		document.getElementById("message").value="you get a lot of wealth, then you get the world";
 	}
 	
-	function locWest() {
+	function btnWest() {
 		document.getElementById("'message").value="wake up , it is only a game"
 	}
 	
 	</script>
 
-
-</head>
-<body>
-  <h1>Life Game (T^T) </h1>  
     <br/>
          <textarea readonly id="message"
                            name="message"
                            rows="50"
                            cols="50"> If you do not choose, your life won’t  advance, but here is only a game.
     </textarea>
-
 <br/>
       <button type="button" onClick="btnNorth(); Points (); this.onclick=null;">North</button>
 		
@@ -56,8 +54,10 @@ Project 2 - Game v0.2.  CMPt
  
       <br/>
   	<br/>
-	<p>Your score is <a id="myScore">0</a> points!</p>
+ 
+   <p>Your score is <a id="myScore">0</a> points!</p>
 <br/>
-<p>  Life is a game all people are players or prayers you want to attend the  party  please touch <a href = "mailto:shuhan.dong1@marist.edu"> here.
+    <h1>Life Game (T^T) </h1> 
+    <p>  Life is a game all people are players or prayers you want to attend the  party  please touch <a href = "mailto:shuhan.dong1@marist.edu"> here.
 </body>
 </html>
